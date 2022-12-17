@@ -23,10 +23,11 @@ const About = ({ children }) => {
           <h3>
             Tech stack:
           </h3>
-          <p><i className="fa-brands fa-2x fa-square-js"></i> JavaScript</p>
+          <p><i className="fa-brands fa-2x fa-square-js"></i>ES6 JavaScript</p>
           <p><i className="fa-brands fa-2x fa-react"></i> React</p>
           <p><i className="fa-brands fa-2x fa-unsplash"></i> Unsplash API</p>
-          <p><i className="fa-brands fa-2x fa-css3-alt"></i> CSS 3</p>
+          <p><i className="fa-brands fa-2x fa-css3-alt"></i> CSS3</p>
+          <p><i className="fa-brands fa-html5"></i>Semantic HTML5</p>
           <span className="flex flex-wrap"><img src={tailwind} alt='tailwind-logo'/>Tailwind CSS</span>
         </article>
 
