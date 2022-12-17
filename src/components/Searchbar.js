@@ -39,7 +39,7 @@ const Searchbar = () => {
   return (
       <div className='flex'>
         <input
-        className='bg-gray-50 border border-gray-300 text-sm w-full indent-2 p-2.5 outline-none focus:border-blue-500'
+        className='bg-gray-50 border border-gray-300 text-sm p-1 outline-none focus:border-blue-500'
         placeholder='Search for an image'
         type='search'
         value={searchValue}
@@ -47,7 +47,7 @@ const Searchbar = () => {
         onKeyDown={handleEnterSearch}
         />
         <button
-        className='bg-blue-600 px-6 py-2.5 text-white rounded-tr rounded-br focus:ring-2 focus:ring-blue-300 disabled:bg-neutral-400 cursor-pointer'
+        className='bg-blue-600 px-2.5 py-2.5 text-white rounded-tr rounded-br focus:ring-2 focus:ring-blue-300 disabled:bg-neutral-400 cursor-pointer'
         onClick={handleBtnSearch}
         disabled={!searchValue}>
           <i className="fa-solid fa-magnifying-glass"></i></button>
