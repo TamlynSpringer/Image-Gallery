@@ -9,7 +9,7 @@ const Images = () => {
   return (
     <>
       <h2 className='text-center mt-6 text-white underline text-xl'>Search results for {searchImage || 'city'}</h2>
-      <main className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 my-10 max-w-7xl mx-auto px-4'>
+      <main className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 my-10 max-w-7.5xl mx-auto px-3'>
         {isLoading ? <Starter item={10} /> : response.map((data) => <Image key={data.id} data={data} />)}
       </main>
       <div className='flex content-evenly justify-center'>
