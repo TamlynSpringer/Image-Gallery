@@ -15,7 +15,7 @@ const Images = () => {
       <div className='flex content-evenly justify-center'>
         <button
         name='prev'
-        className='bg-neutral-400 px-6 py-2.5 text-white rounded'
+        className='bg-neutral-500 px-6 py-2.5 text-white rounded'
         disabled={page === 1}
         onClick={() => setPage((prevState) => prevState - 1)}>
           Prev
@@ -23,7 +23,7 @@ const Images = () => {
         <p className='px-6 text-white py-2.5'>{page}</p>
         <button
         name='next'
-        className='bg-neutral-400 px-6 py-2.5 text-white rounded'
+        className='bg-neutral-500 px-6 py-2.5 text-white rounded'
         onClick={() => setPage((prevState) => prevState + 1)}>
           Next
         </button>
