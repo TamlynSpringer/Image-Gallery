@@ -8,7 +8,7 @@ const About = ({ children }) => {
     <>
     <Nav children={children} />
     <main className='px-20 py-10'>
-        <article>
+        <article className='bg-neutral-300'>
           <h3 lassName='mb-10'>
             Created by Tamlyn Springer.
           </h3>
@@ -19,7 +19,7 @@ const About = ({ children }) => {
             <span><a href='https://github.com/TamlynSpringer' target='_blank' rel='noreferrer'><i className='fa-brands fa-square-github fa-2x github-logo cursor-pointer'></i></a></span>
         </article>
         <br></br>
-        <article>
+        <article className='bg-neutral-300'>
           <h3>
             Tech stack:
           </h3>

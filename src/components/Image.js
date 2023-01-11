@@ -7,7 +7,7 @@ const Image = ({ data }) => {
         <div className={flip ? 'hidden' : 'front'}>
           <img className="h-72 w-full object-cover rounded-lg shadow-md" src={data.urls.small} alt={data.alt_description} />
         </div>
-        <div className={flip ? 'back h-72 w-full object-cover rounded-lg shadow-md p-10' : 'hidden'} >
+        <div className={flip ? 'back h-72 w-full object-cover rounded-lg shadow-md p-10 bg-neutral-300' : 'hidden'} >
           <h3><i className="fa-solid fa-user"></i> {data.user.name}</h3>
           <p><i className="fa-solid fa-image"></i> {data.description}</p>
           <a href={data.urls.full} target='_blank' rel='noreferrer'><i className="fa-solid fa-arrow-up-right-from-square"></i> Open image</a>
