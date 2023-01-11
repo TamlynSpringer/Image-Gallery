@@ -10,3 +10,8 @@ https://react-image-search-gallery.netlify.app/
 - React 
 - Unsplash API
 - Tailwind CSS
+
+
+## Work in progress
+
+The pagination not working correctly for all searches
