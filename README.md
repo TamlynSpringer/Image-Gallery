@@ -8,10 +8,8 @@ https://react-image-search-gallery.netlify.app/
 ## Tech stack
 
 - React 
+- React Router Dom for navigation
+- React Context for state management
 - Unsplash API
 - Tailwind CSS
-
-
-## Work in progress
-
-The pagination not working correctly for all searches
+- Axios custom hook 

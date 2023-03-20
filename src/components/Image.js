@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const Image = ({ data }) => {
   const [flip, setFlip] = useState(false);
-  console.log(data)
   return (
       <article key={data.id} onClick={() => setFlip(!flip)} className='cursor-pointer' >
         <div className={flip ? 'hidden' : 'front'}>

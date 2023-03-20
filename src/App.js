@@ -8,10 +8,10 @@ export const ImageContext = createContext();
 const api_key = process.env.REACT_APP_ACCESS_KEY;
 
 const App = () => {
-  const [searchImage, setSearchImage] = useState('');
+  const [searchImage, setSearchImage] = useState('Stockholm');
   const [page, setPage] = useState(1);
 
-  const { response, isLoading, error, fetchData } = useAxios(`/search/photos?page=${page}&query=city&client_id=${api_key}`)
+  const { response, isLoading, error, fetchData } = useAxios(`/search/photos?page=${page}&query=${searchImage}&client_id=${api_key}`)
   const value = {
     response,
     isLoading,

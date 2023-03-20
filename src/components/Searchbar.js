@@ -5,15 +5,8 @@ import { useNavigate } from 'react-router-dom';
 const Searchbar = () => {
   const [searchValue, setSearchValue] = useState('');
 
-  const { fetchData, setSearchImage } = useContext(ImageContext);
+  const { fetchData, setSearchImage, page, setPage } = useContext(ImageContext);
   const navigate = useNavigate();
-
-  const setLocalStorage = searchValue => {
-    const searches = JSON.parse(localStorage.getItem('search') || '[]');
-    searches.unshift(searchValue);
-    searches.splice(3);
-    localStorage.setItem('search', JSON.stringify(searches));
-  };
   
   const handleInputChange = (e) => {
     setSearchValue(e.target.value);
@@ -21,20 +14,18 @@ const Searchbar = () => {
   };
   const handleEnterSearch = (e) => {
     if(e.key === 'Enter') {
-      fetchData(`/search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+      fetchData(`/search/photos?page=${page}&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
       setSearchImage(searchValue);
       setSearchValue('')
-      setLocalStorage();
+      setPage(1);
     }
   };
   const handleBtnSearch = () => {
-    fetchData(`/search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+    fetchData(`/search/photos?page=${page}&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
       setSearchValue('');
+      setPage(1);
       setSearchImage(searchValue);
-      setLocalStorage();
   };
-
-  console.log(searchValue)
 
   return (
       <div className='flex'>
