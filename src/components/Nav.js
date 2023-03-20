@@ -24,7 +24,7 @@ const Nav = ({ children, fixed }) => {
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li className="nav-item px-4 mx-auto flex items-center text-s font-bold  text-white hover:opacity-75">
-              <Link to='/'>
+              <Link to='/search'>
               <i className="fa-solid fa-house text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Home</span>
               </Link>               
             </li>
